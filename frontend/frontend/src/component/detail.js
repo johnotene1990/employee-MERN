@@ -13,7 +13,7 @@ const Detail = () => {
     const navigate = useNavigate()
 
     useEffect(()=> {
-        axios.get('http://localhost:8080/getuser/'+id)
+        axios.get('https://employee-mern-api-tau.vercel.app/getuser/'+id)
         .then(result=>{
             console.log(result)
             setName(result.data.name)

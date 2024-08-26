@@ -13,7 +13,7 @@ const Create = () => {
 
     const handleSubmit=((e)=>{
         e.preventDefault();
-        axios.post('http://localhost:8080/create',{name,email,age,city,password})
+        axios.post('https://employee-mern-api-tau.vercel.app/create',{name,email,age,city,password})
         .then(res => {console.log(res)
             navigate('/home')
         })

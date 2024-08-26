@@ -27,7 +27,7 @@ const Update = () => {
 
     const handleUpdate=((e)=>{
         e.preventDefault();
-        axios.post('http://localhost:8080/update/'+id,{name,email,age,city})
+        axios.post('https://employee-mern-api-tau.vercel.app/update/'+id,{name,email,age,city})
         .then(res => {console.log(res)
             navigate('/home')
         })
