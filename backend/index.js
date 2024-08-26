@@ -11,6 +11,12 @@ const app = express()
 app.use(express.json()) // convert user details to json format
 app.use(cors()) // use to send data to the backend
 app.use(express.static('public'))
+app.use(cors({
+    origin:['http://localhost:3000',""],
+    methods:["POST","GET","PUT", "DELETE","UPDATE"],
+    credentials:true,
+    optionsSuccessStatus:200
+}))
 
 
 // ('mongodb://localhost:27017/employee') // connection string
