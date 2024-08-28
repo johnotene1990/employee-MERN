@@ -26,7 +26,7 @@ function Image() {
       <input type='file' onChange={e=>setFile(e.target.files[0])}/>
       <button onClick={handleUpload}>Upload</button>
       <br/>
-      <img src= {'https://employee-mern-api-tau.vercel.app/images/'+image} alt='image'/>
+      <img src= {'https://employee-mern-api-tau.vercel.app/images/'+image}  alt={'food'}/>
     </div>
   )
 }
